@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">MSGRtest</string>
+
+    <!--Main  activity-->
+    <string name="main_login">LOGIN</string>
+    <string name="main_enter_tag_and_pass">Enter tag and pass</string>
+    <string name="main_tag">Tag</string>
+    <string name="main_password">Password</string>
+    <string name="main_registration_btn">REGISTRATION</string>
+    <!--Errors in main activity-->
+    <string name="main_error_enter_name_and_pass">Please, enter tag and password!</string>
+    <string name="main_error_enter_proper_tag">Tag should contain only latin letters and arabic numbers!</string>
+
+
+    <!--Registration activity-->
+    <string name="registration_info_label">REGISTRATION</string>
+    <string name="registration_submit_button">SEND REQUEST</string>
+    <string name="registration_back_button">BACK</string>
+    <!--Fields -->
+    <string name="registration_tag_hint">TAG: only digits and latin letters(min 4)</string>
+    <string name="registration_name_hint">Name: only latin letters (min 2)</string>
+    <string name="registration_last_name_hint">Last name (optional) : only latin letters</string>
+    <string name="registration_email_hint">Email (optional)</string>
+    <string name="registration_phone_number_hint">Phone number (optional)</string>
+    <string name="registration_password_hint">Password</string>
+    <string name="registration_password_repeat_hint">Password repeat</string>
+    <string name="title_activity_chat_list">ChatListActivity</string>
+
+    <!--PostRegistration activity-->
+    <string name="post_registration_main_info_label">SUCCESSFUL REGISTRATION</string>
+    <string name="post_registration_id_info_label">Your ID #</string>
+    <string name="post_registration_userTag_info_label">Your tag:</string>
+    <string name="post_registration_info_label">SUCCESSFUL REGISTRATION</string>
+    <string name="post_registration_button_continue">CONTINUE</string>
+
+
+    <!-- to be deleted-->
+    <!-- Chat list activity -->
+    <string name="large_text"></string>
+    <string name="head_noMsgs">MSGR2021: no unread msgs</string>
+    <string name="head_unread_msgs_quant">no unread msgs</string>
+    <string name="chat_user_name">User name</string>
+    <string name="chat_last_msgs">bla bla bla</string>
+
+
+</resources>

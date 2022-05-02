@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/chatlist_chat_window"
+        android:layout_width="wrap_content"
+        android:layout_height="110dp"
+        android:layout_weight="1"
+        app:srcCompat="@drawable/ic_mainmenu_chat_back"
+        tools:ignore="MissingConstraints"></ImageView>
+
+    <TextView
+        android:id="@+id/chat_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/chat_user_name"
+        android:textColor="#FFFFFF"
+        android:textSize="21sp"
+        app:layout_constraintStart_toStartOf="@+id/chatlist_chat_window"
+        app:layout_constraintTop_toTopOf="@+id/chatlist_chat_window"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/chat_last_msg"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="15dp"
+        android:text="@string/chat_last_msgs"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/chatlist_chat_window"
+        app:layout_constraintEnd_toEndOf="@+id/chatlist_chat_window"
+        app:layout_constraintStart_toStartOf="@+id/chatlist_chat_window"
+        app:layout_constraintTop_toBottomOf="@+id/chat_user_name" />
+</androidx.constraintlayout.widget.ConstraintLayout>

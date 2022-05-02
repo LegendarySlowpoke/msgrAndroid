@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistrationActivity">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/registrationBackLayout"
+        android:layout_width="411dp"
+        android:layout_height="1500dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <EditText
+            android:id="@+id/registrationNameField"
+            android:layout_width="370dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="12dp"
+            android:ems="10"
+            android:hint="@string/registration_name_hint"
+            android:inputType="textPersonName"
+            app:layout_constraintStart_toStartOf="@+id/registrationTagField"
+            app:layout_constraintTop_toBottomOf="@+id/registrationTagField"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/registrationLastNameField"
+            android:layout_width="370dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="12dp"
+            android:ems="10"
+            android:hint="@string/registration_last_name_hint"
+            android:inputType="textPersonName"
+            app:layout_constraintStart_toStartOf="@+id/registrationNameField"
+            app:layout_constraintTop_toBottomOf="@+id/registrationNameField"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/registrationEmailField"
+            android:layout_width="370dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="12dp"
+            android:ems="10"
+            android:hint="@string/registration_email_hint"
+            android:inputType="textPersonName"
+            app:layout_constraintStart_toStartOf="@+id/registrationLastNameField"
+            app:layout_constraintTop_toBottomOf="@+id/registrationLastNameField"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/registrationPassField"
+            android:layout_width="370dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="12dp"
+            android:ems="10"
+            android:hint="@string/registration_password_hint"
+            android:inputType="textPersonName"
+            android:password="true"
+            app:layout_constraintStart_toStartOf="@+id/registrationPhoneField"
+            app:layout_constraintTop_toBottomOf="@+id/registrationPhoneField"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/registrationPhoneField"
+            android:layout_width="370dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="12dp"
+            android:ems="10"
+            android:hint="@string/registration_phone_number_hint"
+            android:inputType="textPersonName"
+            app:layout_constraintStart_toStartOf="@+id/registrationEmailField"
+            app:layout_constraintTop_toBottomOf="@+id/registrationEmailField"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/registrationPassRepeatField"
+            android:layout_width="370dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="12dp"
+            android:ems="10"
+            android:hint="@string/registration_password_repeat_hint"
+            android:inputType="textPersonName"
+            android:password="true"
+            app:layout_constraintStart_toStartOf="@+id/registrationPassField"
+            app:layout_constraintTop_toBottomOf="@+id/registrationPassField"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/registrationSubmitButton"
+            android:layout_width="209dp"
+            android:layout_height="88dp"
+            android:layout_marginTop="20dp"
+            android:password="false"
+            android:text="@string/registration_submit_button"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/registrationPassRepeatField"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/registrationInfoLabel"
+            android:layout_width="211dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="2dp"
+            android:text="@string/registration_info_label"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/registrationTagField"
+            android:layout_width="370dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="12dp"
+            android:ems="10"
+            android:hint="@string/registration_tag_hint"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/registrationInfoLabel"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/registration_back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginEnd="5dp"
+            android:text="@string/registration_back_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/registrationInfoLabel" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
